@@ -41,6 +41,18 @@ return {
                             -- actions.which_key shows the mappings for your picker,
                             -- e.g. git_{create, delete, ...}_branch for the git_branches picker
                             ["<C-h>"] = actions.which_key,
+                            -- use <cltr> + n to go to the next option
+                            ["<C-n>"] = actions.cycle_history_next,
+                            -- use <cltr> + p to go to the previous option
+                            ["<C-p>"] = actions.cycle_history_prev,
+                            -- use <cltr> + j to go to the next preview
+                            ["<C-j>"] = actions.move_selection_next,
+                            -- use <cltr> + k to go to the previous preview
+                            ["<C-k>"] = actions.move_selection_previous,
+                            -- ["<C-b>"] = actions.preview_scrolling_left,
+                            -- ["<C-f>"] = actions.preview_scrolling_right,
+                            -- ["<M-b>"] = actions.results_scrolling_left,
+                            -- ["<M-f>"] = actions.results_scrolling_right,
                         }
                     }
                 },

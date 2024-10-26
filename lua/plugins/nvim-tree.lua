@@ -10,7 +10,7 @@ return {
   },
   config = function()
     vim.keymap.set('n', '<leader>e', "<cmd>NvimTreeToggle<CR>", {desc = "Toggle [E]xplorer"}) -- set the keymap to open the explorer
-
+    vim.keymap.set('n', '<leader>1', "<cmd>NvimTreeFindFile<CR>", {desc = "Toggle [E]xplorer and Focus Current File"}) -- set the keymap to open the explorer
     require("nvim-tree").setup { -- BEGIN_DEFAULT_OPTS
           on_attach = "default",
           hijack_cursor = false,
